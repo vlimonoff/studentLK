@@ -1,0 +1,18 @@
+{
+  "name": "diplom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prettier": "prettier --write \"./**/*.{js,jsx,ts,tsx,json,css}\"",
+    "start-back": "cd backend && npm i && npm start",
+    "start-front": "cd backend && npm i && npm start",
+    "create-db": "cd backend && npx sequelize db:create && npx sequelize db:migrate && npx sequelize db:seed:all",
+    "dbr": "cd backend && npx sequelize db:drop && npx sequelize db:create && npx sequelize db:migrate && npx sequelize db:seed:all"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "2.8.7"
+  }
+}
