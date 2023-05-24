@@ -128,3 +128,4 @@ yarn-error.log*
 
 # venv
 /venv
+/analysis/venv
